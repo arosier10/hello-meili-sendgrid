@@ -1,17 +1,5 @@
-import './App.css'
-
-function App() {
-  return (
-    <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
-      <h1>Hello World</h1>
-      <p>This is a starter site using React, Meilisearch Cloud, and SendGrid.</p>
-    </div>
-  )
-}
-
-export default App
-
 import { useState } from 'react'
+import './App.css'
 
 function App() {
   const [email, setEmail] = useState('')
@@ -38,8 +26,9 @@ function App() {
   }
 
   return (
-    <div style={{ padding: '2rem' }}>
+    <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
       <h1>Hello World</h1>
+      <p>This is a starter site using React, Meilisearch Cloud, and SendGrid.</p>
       <input
         type="email"
         placeholder="Enter email"
@@ -51,3 +40,5 @@ function App() {
     </div>
   )
 }
+
+export default App
